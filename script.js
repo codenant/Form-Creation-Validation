@@ -16,17 +16,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
         if(username.length < 3){
             isValid = false;
-            messages.push('Username should be more than 3 characters.');
+            messages.push('Username must be more than 3 characters.');
         }
 
         if(!email.includes('@') || !email.includes('.')){
             isValid = false;
-            messages.push('Email format is invalid.');
+            messages.push('Email must contain "@" and "."');
         }
             
         if(password.length < 8){
             isValid = false;
-            messages.push('Password must contain least 8 characters');
+            messages.push('Password must contain at least 8 characters');
         }
             
         // Displaying Feedback
